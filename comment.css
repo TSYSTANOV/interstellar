@@ -1,0 +1,153 @@
+.comment {
+  padding: 125px 0 130px 0;
+  background-color: #f4f6fc;
+}
+.comment__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 110px;
+}
+.comment__wrap-left {
+  flex-grow: 1;
+}
+.comment__wrap-right {
+  flex-grow: 2;
+}
+.comment__title {
+  max-width: 387px;
+  color: #282938;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 56px;
+  margin-bottom: 16px;
+}
+.comment__text {
+  max-width: 387px;
+  color: #282938;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 175% */
+}
+.comment__quotes {
+  max-width: 840px;
+  margin-bottom: 45px;
+  color: #282938;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 48px; /* 150% */
+}
+.comment__wrap-right-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.comment__autor {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.comment__autor-photo {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+}
+.comment__autor-name {
+  color: #282938;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px; /* 177.778% */
+}
+.comment__autor-position {
+  color: #282938;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px; /* 233.333% */
+}
+.comment__clider {
+  display: flex;
+  gap: 10px;
+}
+.comment__btn {
+  border-radius: 50%;
+  position: relative;
+  width: 48px;
+  height: 48px;
+  background-color: #fff;
+}
+.comment__btn--active {
+  background-color: #5239fa;
+  position: relative;
+}
+.comment__btn::before {
+  content: "";
+  position: absolute;
+  top: 57%;
+  left: 35%;
+  transform: rotateZ(35deg);
+  background-color: grey;
+  width: 16px;
+  height: 3px;
+}
+.comment__btn::after {
+  content: "";
+  position: absolute;
+  top: 40%;
+  left: 35%;
+  transform: rotateZ(-35deg);
+  background-color: grey;
+  width: 16px;
+  height: 3px;
+}
+.comment__btn--active::before {
+  content: "";
+  position: absolute;
+  top: 57%;
+  left: 35%;
+  transform: rotateZ(-35deg);
+  background-color: #fff;
+  width: 16px;
+  height: 3px;
+}
+.comment__btn--active::after {
+  content: "";
+  position: absolute;
+  top: 40%;
+  left: 35%;
+  transform: rotateZ(35deg);
+  background-color: #fff;
+  width: 16px;
+  height: 3px;
+}
+@media screen and (max-width: 1000px) {
+  .comment__wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .comment__wrap {
+    gap: 30px;
+  }
+  .comment__quotes {
+    max-width: 840px;
+    margin-bottom: 25px;
+    color: #282938;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+  }
+  .comment__btn {
+    width: 38px;
+    height: 38px;
+  }
+}

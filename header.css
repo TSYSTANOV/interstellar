@@ -1,0 +1,152 @@
+.header {
+  background-color: #1c1e53;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+.header__wrap {
+  padding: 16px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 48px;
+  position: relative;
+}
+.header__logo img {
+  max-width: 122px;
+  max-height: 25px;
+}
+.header__nav {
+  margin-left: auto;
+}
+.header__nav_list {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+.header__item-btn {
+  color: var(--white-hover);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+}
+.header__item-btn:hover {
+  color: var(--white);
+}
+.header__btn {
+  color: var(--white);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+  border-radius: 41px;
+  border: 2px solid rgba(244, 246, 252, 0.2);
+  padding: 15px 48px;
+}
+.header__btn:hover {
+  color: #000;
+  background-color: #fcd980;
+}
+.menu_check,
+.checkbox_btn {
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  display: none;
+}
+.menu_check {
+  opacity: 0;
+}
+.checkbox_btn {
+  pointer-events: none;
+  border-radius: 5px;
+}
+.checkbox_btn-line {
+  background-color: var(--white);
+  position: absolute;
+  width: 100%;
+  height: 6px;
+}
+.checkbox_btn-line:nth-child(1) {
+  left: 0;
+  top: 0;
+  transition: 0.3s;
+}
+.checkbox_btn-line:nth-child(2) {
+  left: 0;
+  bottom: 0;
+  transition: 0.3s;
+}
+.checkbox_btn-line:nth-child(3) {
+  left: 0;
+  top: 40%;
+  transition: 0.3s;
+}
+.menu_check:checked ~ .checkbox_btn .checkbox_btn-line:nth-child(1) {
+  transform: rotate(45deg) translateX(50%) translateY(50%);
+}
+.menu_check:checked ~ .checkbox_btn .checkbox_btn-line:nth-child(2) {
+  transform: rotate(-45deg) translateX(50%) translateY(-50%);
+}
+.menu_check:checked ~ .checkbox_btn .checkbox_btn-line:nth-child(3) {
+  opacity: 0;
+}
+.header__item-btn-active {
+  color: var(--white);
+}
+
+@media screen and (max-width: 1020px) {
+  .header__nav {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    background-color: rgba(28, 30, 83, 0.9);
+    padding-top: 15%;
+    width: 100%;
+    height: 100vh;
+    z-index: 2;
+    transition: 0.3s;
+  }
+  .menu_check,
+  .checkbox_btn {
+    display: block;
+    z-index: 3;
+  }
+  .header__nav_list {
+    flex-direction: column;
+  }
+  .menu_check:checked ~ .header__nav {
+    left: -50%;
+  }
+
+  .header__logo img {
+    margin-left: 50%;
+  }
+  .header__nav_list_item {
+    margin-left: 50%;
+  }
+  .header__item-btn {
+    font-size: 28px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .header__btn {
+    font-size: 12px;
+    padding: 12px 28px;
+  }
+  .header__logo img {
+    max-width: 117px;
+    max-height: 20px;
+  }
+  .menu_check:checked ~ .header__nav {
+    left: 0;
+  }
+  .header__nav_list_item {
+    margin-left: 0;
+  }
+}

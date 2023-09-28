@@ -1,0 +1,123 @@
+.home {
+  background-color: #1c1e53;
+}
+.home__wrap {
+  padding: 80px 0 100px 0;
+  /*display: flex;
+  align-items: center;
+  justify-content: space-between;*/
+}
+.home__info {
+  padding-right: 50%;
+  background: url(images/Illustration.png) 100% 50% no-repeat;
+  background-size: 638px;
+  animation: bg 5s linear infinite;
+}
+@keyframes bg {
+  0% {
+    background-size: 638px;
+  }
+  50% {
+    background-size: 668px;
+  }
+  100% {
+    background-size: 638px;
+  }
+}
+.home__info-title {
+  color: var(--white);
+  font-size: 54px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 74px; /* 137.037% */
+  margin-bottom: 24px;
+}
+.home__info-text {
+  color: var(--white-hover);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  margin-bottom: 48px;
+}
+.home__btn {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.btn-send {
+  color: var(--white);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+  position: relative;
+  padding-right: 35px;
+  background: url(images/Arrow.png) 100% 50% no-repeat;
+}
+.btn-send:hover {
+  padding-right: 45px;
+  color: #fcd980;
+  background: url(images/arow.svg) 100% 50% no-repeat;
+}
+/*.home__img-item {
+  width: 638px;
+  height: 362px;
+  object-fit: contain;
+}
+.home__img {
+  flex-grow: 1;
+}*/
+@media screen and (max-width: 1020px) {
+  .home__wrap {
+    padding: 30px 0 60px 0;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .home__info {
+    background-size: 538px;
+    animation: unset;
+  }
+}
+@media screen and (max-width: 900px) {
+  .home__info {
+    padding-right: unset;
+    padding-top: 55%;
+    background: url(images/Illustration.png) 50% 0% no-repeat;
+    background-size: contain;
+  }
+}
+@media screen and (max-width: 480px) {
+  .home__info-title {
+    color: var(--white);
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 24px;
+  }
+  .home__wrap {
+    padding: 15px 0 30px 0;
+  }
+
+  .home__info-text {
+    color: var(--white-hover);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    margin-bottom: 48px;
+  }
+  .home__info-title {
+    font-size: 26px;
+    margin-bottom: 15px;
+  }
+  .btn-send {
+    font-size: 10px;
+  }
+  .home__btn {
+    gap: 25px;
+  }
+}

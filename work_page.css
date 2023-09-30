@@ -1,0 +1,196 @@
+.work-portfolio {
+  padding: 100px 0;
+  background-color: #f4f6fc;
+}
+.work-portfolio__info {
+  max-width: 730px;
+  text-align: center;
+  margin: 0 auto;
+}
+.work-portfolio__feature {
+  color: #282938;
+  margin-bottom: 4px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px; /* 175% */
+}
+.work-portfolio__title {
+  color: #282938;
+  margin-bottom: 24px;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 64px; /* 133.333% */
+}
+.work-portfolio__text {
+  color: #282938;
+  margin-bottom: 30px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px; /* 175% */
+}
+.footer__social-img--work {
+  color: #1c1e53;
+  width: 20px;
+  height: 20px;
+}
+.footer__social-img--work:hover {
+  color: #1c1e53;
+  opacity: 0.6;
+}
+.footer__social--work {
+  display: flex;
+  justify-content: center;
+}
+.work-wrap {
+  padding: 100px 0;
+}
+.work-wrap__list {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.work-wrap__btn {
+  color: #282938;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px; /* 177.778% */
+}
+.work-wrap__btn--active {
+  color: #2405f2;
+}
+.work-wrap__cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 35px;
+}
+.work-wrap__card-img {
+  width: 100%;
+  max-height: 380px;
+  padding: 35px;
+  background: linear-gradient(131deg, #f4ede1 16.74%, #98b1c6 103.17%);
+}
+.work-wrap__card:nth-child(2) .work-wrap__card-img {
+  background: linear-gradient(131deg, #ffd3af 16.74%, #4f56ff 103.17%);
+}
+.work-wrap__card:nth-child(3) .work-wrap__card-img {
+  background: linear-gradient(131deg, #eebca7 16.74%, #c8c8c8 103.17%);
+}
+.work-wrap__card:nth-child(4) .work-wrap__card-img {
+  background: linear-gradient(131deg, #c2e7f2 16.74%, #98a4ff 103.17%);
+}
+.work-wrap__card:nth-child(5) .work-wrap__card-img {
+  background: linear-gradient(131deg, #c5bcff 16.74%, #9bf6d5 103.17%);
+}
+.work-wrap__card:nth-child(6) .work-wrap__card-img {
+  background: linear-gradient(131deg, #d2d6fd 16.74%, #d6acea 103.17%);
+}
+.work-wrap__card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.work-wrap__card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.work-wrap__card-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.work-wrap__card-title {
+  color: #282938;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 56px;
+}
+.work-wrap__card-text {
+  color: var(--Dark-blue, #282938);
+  text-align: justify;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+}
+.work-wrap__card-link {
+  color: #282938;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  align-self: flex-start;
+  background: url(images/Arrow3.svg) 100% 50% no-repeat;
+  padding-right: 30px;
+}
+.work-wrap__card-link:hover {
+  padding-right: 40px;
+  opacity: 0.8;
+}
+.work-contact__info {
+  max-width: 730px;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 125px;
+}
+.work-contact__title {
+  color: #282938;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 64px;
+  margin-bottom: 20px;
+}
+.work-contact__text {
+  color: #282938;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+  margin-bottom: 40px;
+}
+.work-contact__btn {
+  margin: 0 auto;
+  display: inline-block;
+}
+@media screen and (max-width: 768px) {
+  .work-wrap__card-img {
+    padding: 15px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .work-wrap__card-title {
+    font-size: 30px;
+  }
+  .work-contact__title {
+    font-size: 25px;
+    line-height: 30px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .work-wrap__cards {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+  .work-wrap__list {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+  }
+  .work-wrap__btn {
+    font-size: 14px;
+    border-right: 1px solid black;
+    padding-right: 10px;
+  }
+  .work-wrap__btn:last-child {
+    border-right: none;
+  }
+}

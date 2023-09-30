@@ -1,0 +1,187 @@
+.work-read-page {
+  padding: 125px 0 110px 0;
+}
+.container-special {
+  max-width: 1084px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+.work-read-page__content {
+  display: flex;
+  gap: 50px;
+  flex-direction: column;
+  border-bottom: 1px solid rgb(40 41 56 / 0.3);
+  padding-bottom: 30px;
+}
+.work-read-page__content-info {
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+}
+.work-read-page__feature {
+  color: #282938;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 36px; /* 150% */
+}
+.work-read-page__title {
+  color: #282938;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 64px; /* 133.333% */
+  max-width: 640px;
+}
+.work-read-page__text {
+  color: #282938;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px; /* 175% */
+  max-width: 817px;
+}
+.work-read-page__img {
+  padding: 60px 80px;
+  width: 100%;
+  max-height: 640px;
+  background: linear-gradient(131deg, #f4ede1 16.74%, #98b1c6 103.17%);
+}
+.work-read-page__image {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+.work-read-page__benefits {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.work-read-page__benefit {
+  display: flex;
+  flex-direction: column;
+}
+.work-read-page__benefit-title {
+  color: #282938;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px; /* 175% */
+}
+.work-read-page__benefit-info {
+  color: #282938;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 36px; /* 150% */
+}
+.work-read-page__content-about {
+  padding-top: 100px;
+  display: flex;
+  gap: 60px;
+  flex-direction: column;
+}
+.work-read-page__content-about-info {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+.work-read-page__content-about-info__title {
+  color: #282938;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 56px; /* 147.368% */
+}
+.work-read-page__content-about-info__text {
+  color: #282938;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 175% */
+  text-align: justify;
+}
+.work-read-page__content-about-info__item {
+  list-style: inside;
+  color: #282938;
+  text-align: justify;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 175% */
+}
+/*keywords*/
+.keywords {
+  padding-bottom: 100px;
+}
+.keywords__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  border-top: 1px solid rgb(40 41 56 / 0.2);
+  border-bottom: 1px solid rgb(40 41 56 / 0.2);
+  padding: 25px 0;
+}
+.keywords__title {
+  color: #2405f2;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 36px; /* 150% */
+}
+.keywords__item {
+  color: #282938;
+  text-align: justify;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px; /* 177.778% */
+}
+@media screen and (max-width: 850px) {
+  .work-read-page__img {
+    padding: 30px;
+  }
+  .keywords__wrap {
+    overflow-x: auto;
+  }
+  .keywords__wrap::-webkit-scrollbar {
+    width: 15px; /* ширина всей полосы прокрутки */
+  }
+
+  .keywords__wrap::-webkit-scrollbar-track {
+    background: #e3eaff; /* цвет зоны отслеживания */
+  }
+
+  .keywords__wrap::-webkit-scrollbar-thumb {
+    background-color: #a4bafc; /* цвет бегунка */
+    border-radius: 20px; /* округлось бегунка */
+    border: 1px solid #c4d3ff; /* отступ вокруг бегунка */
+  }
+  .work-read-page__benefits {
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 500px) {
+  .work-read-page__img {
+    padding: 15px;
+  }
+  .work-read-page__content-about-info__title {
+    font-size: 25px;
+  }
+  .work-read-page__content-about {
+    gap: 30px;
+    padding-top: 50px;
+  }
+  .work-read-page__benefit-title {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .work-read-page__benefit-info {
+    font-size: 16px;
+    line-height: 26px;
+  }
+}

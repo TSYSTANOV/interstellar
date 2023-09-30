@@ -12,6 +12,7 @@
   background: url(images/Illustration.png) 100% 50% no-repeat;
   background-size: 638px;
   animation: bg 5s linear infinite;
+  padding-top: 10px;
 }
 @keyframes bg {
   0% {
